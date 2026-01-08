@@ -1,0 +1,25 @@
+{
+  "name": "playwright-e2e-testing-project",
+  "version": "1.0.0",
+  "description": "This repository showcases a complete End-to-End automated testing framework built with **Playwright**, following real-world QA practices used in professional environments.",
+  "main": "index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/antoniocarvajal938/playwright-e2e-testing-project.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/antoniocarvajal938/playwright-e2e-testing-project/issues"
+  },
+  "homepage": "https://github.com/antoniocarvajal938/playwright-e2e-testing-project#readme",
+  "devDependencies": {
+    "@playwright/test": "^1.57.0",
+    "@types/node": "^25.0.3"
+  }
+}
