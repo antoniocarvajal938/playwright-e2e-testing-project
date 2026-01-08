@@ -45,36 +45,6 @@ In real projects, automation quality is measured by **how tests are built**, not
 ## 🗂 Project Structure
 The project follows a modular and scalable structure, designed to resemble a real-world automation framework used in professional QA teams.
 
-.
-├── tests/ # Test specifications grouped by type
-│ ├── smoke/ # Critical tests to validate core functionality
-│ ├── e2e/ # Complete user journeys
-│ └── regression/ # Stable scenarios covering main features
-│
-├── pages/ # Page Object Model (POM)
-│ ├── LoginPage.ts
-│ ├── ProductsPage.ts
-│ ├── CartPage.ts
-│ └── CheckoutPage.ts
-│
-├── test-plan/ # Test planning and QA documentation
-│ ├── test-plan.md
-│ ├── scope.md
-│ ├── risks.md
-│ └── test-cases.md
-│
-├── fixtures/ # Test data and mock users
-├── utils/ # Reusable helpers and utilities
-├── reports/ # Execution reports (ignored in git)
-│
-├── playwright.config.ts
-├── package.json
-├── tsconfig.json
-└── README.md
-
-yaml
-Copiar código
-
 ---
 
 ## 📄 Test Plan
