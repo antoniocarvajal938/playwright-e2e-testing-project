@@ -2,19 +2,19 @@ import { Page, Locator } from '@playwright/test';
 
 export class ProductsPage {
     private readonly page: Page;
-    private readonly inventoryList: Locator;
+    private readonly inventoryItems: Locator;
     private readonly cartIcon: Locator;
     private readonly cartBadge: Locator;
 
     constructor(page: Page) {
         this.page = page;
-        this.inventoryList = page.locator('[data-test="inventary-list"]');
+        this.inventoryItems = page.locator('[data-test="inventory-item"]');
         this.cartIcon = page.locator('.shopping_cart_link');
         this.cartBadge = page.locator('.shopping_cart_badge');
     }
     
     async isProductListVisible(): Promise<boolean> {
-        return await this.inventoryList.isVisible();
+        return await this.inventoryItems.first().isVisible();
     }
 
     async addProductToCart(productName: string): Promise<void> {
