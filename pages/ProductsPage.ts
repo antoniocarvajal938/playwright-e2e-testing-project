@@ -19,7 +19,7 @@ export class ProductsPage {
 
     async addProductToCart(productName: string): Promise<void> {
         const productID = this.formatProductName(productName);
-        const addButton = this.page.locator('[data-test="add-to-cart-${productID}"]');
+        const addButton = this.page.locator(`[data-test="add-to-cart-${productID}"]`);
         await addButton.click();
     }
 
@@ -44,6 +44,6 @@ export class ProductsPage {
   }
 
   private formatProductName(productName: string): string {
-    return productName.toLowerCase().replace(/\s+/g, '-');
+    return productName.toLowerCase().trim().replace(/[^a-z0-9]+/g, '-');
   }
 }
