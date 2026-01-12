@@ -79,12 +79,52 @@ Some cases are intentionally left as manual to reflect realistic QA decision-mak
 
 ---
 
-## ▶️ How to Run the Tests
+## Reports
 
+Playwright generates execution reports automatically in the following folders:
+- `playwright-report/`
+- `test-results/`
+
+The `reports/` folder is reserved for potential custom or exported reports if required in future project iterations.
+
+---
+
+## Test Structure
+
+- `tests/smoke/`  
+  Contains critical automated smoke tests covering the main business flow.
+
+- `tests/e2e/`  
+  Reserved for extended end-to-end scenarios beyond smoke coverage.
+
+- `tests/regression/`  
+  Reserved for future regression test suites once additional features or changes are introduced.
+
+---
+
+## How to Run the Tests
+
+### Install dependencies
+```bash
 npm install
-npx playwright install
+```
+
+### Run all tests
+```bash
 npx playwright test
+```
 
-To run tests in headed mode:
+### Run smoke tests only
+```bash
+npx playwright test tests/smoke
+```
 
-npx playwright test --headed
+### Run end-to-end tests
+```bash
+npx playwright test tests/e2e
+```
+
+### Open the HTML test report
+```bash
+npx playwright show-report
+```
