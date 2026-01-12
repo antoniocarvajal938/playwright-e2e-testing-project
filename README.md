@@ -80,7 +80,7 @@ Some scenarios are intentionally not automated to reflect realistic QA decision-
 
 ---
 
-## How to Run the Tests
+## 🔧 How to Run the Tests
 
 ### Install dependencies
 ```bash
@@ -109,7 +109,7 @@ npx playwright show-report
 
 ---
 
-## Reports
+## 📊 Reports
 
 Playwright generates execution reports automatically in the following folders:
 - `playwright-report/`
@@ -119,7 +119,7 @@ The `reports/` folder is reserved for potential custom or exported reports if re
 
 ---
 
-## Test Structure
+## 🗂 Test Structure
 
 - `tests/smoke/`  
   Contains critical automated smoke tests covering the main business flow.
