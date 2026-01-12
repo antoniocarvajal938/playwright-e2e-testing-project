@@ -37,10 +37,11 @@ In real projects, automation quality is measured by **how tests are built**, not
 ---
 
 ## 🧪 Test Types Covered
-- Smoke Tests
-- End-to-End Tests
-- Regression Scenarios
-- Negative Test Cases
+- Smoke Tests (implemented)
+- End-to-End Tests (implemented)
+- Regression Scenarios (planned)
+- Negative Test Cases (planned)
+
 
 ## 🗂 Project Structure
 The project follows a modular and scalable structure, designed to resemble a real-world automation framework used in professional QA teams.
@@ -68,37 +69,14 @@ This project prioritizes:
 - Clear separation between test logic and UI interactions
 
 Not all scenarios are automated on purpose.  
-Some cases are intentionally left as manual to reflect realistic QA decision-making.
+Some scenarios are intentionally not automated to reflect realistic QA decision-making and prioritization.
 
 ---
 
 ## 🚀 Tech Stack
-- **Playwright**
-- **TypeScript**
-- **Node.js**
-
----
-
-## Reports
-
-Playwright generates execution reports automatically in the following folders:
-- `playwright-report/`
-- `test-results/`
-
-The `reports/` folder is reserved for potential custom or exported reports if required in future project iterations.
-
----
-
-## Test Structure
-
-- `tests/smoke/`  
-  Contains critical automated smoke tests covering the main business flow.
-
-- `tests/e2e/`  
-  Reserved for extended end-to-end scenarios beyond smoke coverage.
-
-- `tests/regression/`  
-  Reserved for future regression test suites once additional features or changes are introduced.
+- **Playwright** – End-to-End test automation
+- **TypeScript** – Strongly typed test implementation
+- **Node.js** – Runtime environment
 
 ---
 
@@ -128,3 +106,28 @@ npx playwright test tests/e2e
 ```bash
 npx playwright show-report
 ```
+
+---
+
+## Reports
+
+Playwright generates execution reports automatically in the following folders:
+- `playwright-report/`
+- `test-results/`
+
+The `reports/` folder is reserved for potential custom or exported reports if required in future project iterations.
+
+---
+
+## Test Structure
+
+- `tests/smoke/`  
+  Contains critical automated smoke tests covering the main business flow.
+
+- `tests/e2e/`  
+  Reserved for extended end-to-end scenarios beyond smoke coverage.
+
+- `tests/regression/`  
+  Reserved for future regression test suites once additional features or changes are introduced.
+
+---
