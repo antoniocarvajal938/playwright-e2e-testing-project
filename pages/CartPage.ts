@@ -21,7 +21,7 @@ export class CartPage {
 
   async removeItem(productName: string): Promise<void> {
     const productId = productName.toLowerCase().replace(/\s+/g, "-");
-    const removeButton = this.page.locator('[data-test="remove-${productId}"]');
+    const removeButton = this.page.locator(`[data-test="remove-${productId}"]`);
     await removeButton.click();
   }
 

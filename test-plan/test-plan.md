@@ -52,7 +52,7 @@ A broader set of stable tests executed to ensure that existing functionalities c
 
 ## 7. Test Environment
 - Application: Sauce Demo (public demo environment)
-- Browser: Chromium (default Playwright browser)
+- Browser: Chromium, Firefox, WebKit
 - Operating System: macOS / Linux / Windows
 - Test Execution: Local execution
 
@@ -81,6 +81,5 @@ User credentials and test data are stored in `/fixtures/users.json`.
 - All critical tests executed successfully
 - No blocking defects detected in core flows
 - Test results and reports generated
-
 
 
